@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Popzy Construction</title>
+        <link
+            href="
+      https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css
+"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://ngoe22.github.io/popzyOfS/popzyOfS.min.css"
+        />
+        <!-- <link rel="stylesheet" href="meow.css" /> -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <a
+                href="https://github.com/Ngoe22/popzyOfS"
+                class="nav-github"
+                target="_blank"
+            >
+                <img
+                    src="./assets/icon/github.svg"
+                    alt="github"
+                    class="innerIcon"
+                />
+            </a>
+
+            <ul id="nav-list" class="nav-list">
+                <li class="nav-item"><a href="#sample">Sample</a></li>
+                <li class="nav-item">
+                    <a href="#installation">Installation</a>
+                </li>
+                <li class="nav-item"><a href="#usage">Usage</a></li>
+                <li class="nav-item"><a href="#options">Options</a></li>
+                <li class="nav-item"><a href="#styling">Styling</a></li>
+                <li class="nav-item"><a href="#api">API</a></li>
+            </ul>
+
+            <div id="mobile__nav-btn" class="mobile__nav-btn">
+                <img src="./assets/icon/bar.svg" alt="bar" class="innerIcon" />
+            </div>
+        </nav>
+
+        <section id="sample" class="sample innerSection">
+            <h2 class="header"><span class="header-num">1</span>Sample</h2>
+            <div class="section-body">
+                <p class="text">
+                    Popzy is a lightweight
+                    <b class="text-bold">modal library</b> built with pure
+                    JavaScript
+                    <a
+                        class="link"
+                        href="https://github.com/Ngoe22/popzyOfS"
+                        target="_blank"
+                    >
+                        ( Github )
+                    </a>
+                </p>
+                <ul class="list">
+                    <li class="list-item">No dependencies</li>
+                    <li class="list-item">Fully customizable with CSS</li>
+                    <li class="list-item">Supports CSS transitions</li>
+                    <li class="list-item">Simple and intuitive API</li>
+                    <li class="list-item">No extra files needed</li>
+                    <li class="list-item">Optimized for user experience</li>
+                </ul>
+                <p class="block-header">Try some Popzy's sample :</p>
+                <div class="sample-btns">
+                    <button class="sample-btn" id="basic-modal-btn">
+                        Basic modal
+                    </button>
+                    <button class="sample-btn" id="large-modal-btn">
+                        Large modal
+                    </button>
+                    <button class="sample-btn" id="mul-modal-btn">
+                        Multiple modal
+                    </button>
+                    <button class="sample-btn" id="footer-content-modal-btn">
+                        Footer content modal
+                    </button>
+                    <button class="sample-btn" id="footer-btns-modal-btn">
+                        Footer buttons modal
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation innerSection">
+            <h2 class="header">
+                <span class="header-num">2</span>Installation
+            </h2>
+            <div class="section-body">
+                <h3 class="block-header">Download :</h3>
+                <div class="table-block" data-fortable="installation"></div>
+                <p class="text">
+                    Popzy provides a small CSS file that you can include
+                    directly via a CDN link. This makes it easy to integrate
+                    into your project and customize as needed.
+                </p>
+                <h3 class="block-header">
+                    Include the Popzy JavaScript file in your project :
+                </h3>
+                <div class="code-block" data-fortable="embedJs">
+                    <!-- embed js  -->
+                </div>
+                <h3 class="block-header">
+                    Optionally, include the Popzy CSS file for default styling :
+                </h3>
+                <div class="code-block" data-fortable="embedCss">
+                    <!-- embed css  -->
+                </div>
+            </div>
+        </section>
+
+        <section id="usage" class="usage innerSection">
+            <h2 class="header"><span class="header-num">3</span>Usage</h2>
+            <div class="section-body">
+                <div class="code-block" data-fortable="usageJs"></div>
+                <p class="text">
+                    If you use <span class="text-bg">templateId</span>, ensure
+                    that a
+                    <span class="text-bg">&lt;template&gt;</span>
+                    element with the corresponding
+                    <span class="text-bg">id</span> exists in your HTML. Below
+                    is an example :
+                </p>
+                <div class="code-block" data-fortable="usageHtml"></div>
+                <p class="text">
+                    <span class="text-bold">Note</span> : When using
+                    <span class="text-bg">templateId</span>, do not provide
+                    <span class="text-bg">content</span>. If both are specified,
+                    <span class="text-bg">content</span> will take precedence,
+                    and <span class="text-bg">templateId</span> will be ignored.
+                </p>
+            </div>
+        </section>
+
+        <section id="options" class="options innerSection">
+            <h2 class="header"><span class="header-num">4</span>Options</h2>
+            <div class="section-body">
+                <div class="table-block" data-fortable="options"></div>
+            </div>
+        </section>
+
+        <section id="styling" class="styling innerSection">
+            <h2 class="header"><span class="header-num">5</span>Styling</h2>
+            <div class="section-body">
+                <p class="text">
+                    Popzy styles are defined in CSS. You can fully customize it
+                    to meet your design requirements.
+                </p>
+                <div class="table-block" data-fortable="styling"></div>
+                <p class="text">
+                    For more details, you can view the full CSS file directly
+                    here :
+                    <a class="link" href="" target="_blank"> PopzyOfS.css. </a>
+                </p>
+            </div>
+        </section>
+
+        <section id="api" class="api innerSection">
+            <h2 class="header"><span class="header-num">6</span>API</h2>
+            <div class="section-body">
+                <div class="table-block" data-fortable="api"></div>
+            </div>
+        </section>
+
+        <hr />
+        <!-- ---------------------------------------------------- -->
+        <!-- ------------------- Template  ---------------------- -->
+        <!-- ---------------------------------------------------- -->
+
+        <template class="table-template" data-fortable="api">
+            <table class="table table-2">
+                <tr class="table-head-row">
+                    <th class="table-head-cell">Method</th>
+                    <th class="table-head-cell">Description</th>
+                </tr>
+
+                <tr class="table-row">
+                    <td class="table-cell">open()</td>
+                    <td class="table-cell">
+                        Opens the modal and triggers the
+                        <span class="text-bg">onOpen</span> callback.
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td class="table-cell">close()</td>
+                    <td class="table-cell">
+                        Closes the modal and triggers the
+                        <span class="text-bg">onClose</span> callback. If
+                        <span class="text-bg"> close(true)</span> is called, it
+                        behaves the same as
+                        <span class="text-bg">destroy()</span>, removing the
+                        modal from the DOM.
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td class="table-cell">setContent(content)</td>
+                    <td class="table-cell">Updates the modal content.</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td class="table-cell">setFooterContent(content)</td>
+                    <td class="table-cell">Updates the footer content.</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td class="table-cell">
+                        addFooterBtn(label, cssClass, callback)
+                    </td>
+                    <td class="table-cell">
+                        Adds a button to the footer with a callback function.
+                    </td>
+                </tr>
+
+                <tr class="table-row">
+                    <td class="table-cell">destroy()</td>
+                    <td class="table-cell">
+                        Completely removes the modal elements from the DOM and
+                        unbinds all associated events.
+                    </td>
+                </tr>
+            </table>
+        </template>
+        <template class="table-template" data-fortable="styling">
+            <table class="table table-2">
+                <tr class="table-head-row">
+                    <th class="table-head-cell">Class Name</th>
+                    <th class="table-head-cell">Description/Role</th>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy</span>
+                    </td>
+                    <td class="table-cell">
+                        Styles the backdrop overlay for the modal. Handles
+                        positioning, centering the modal, and applying a
+                        semi-transparent background.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy--show</span>
+                    </td>
+                    <td class="table-cell">
+                        Applied when the modal is visible. Controls the
+                        visibility and opacity of the backdrop.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy__container </span>
+                    </td>
+                    <td class="table-cell">
+                        Styles the modal container, including its size, padding,
+                        border-radius, and transform animations for scaling
+                        in/out.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy__close </span>
+                    </td>
+                    <td class="table-cell">
+                        Styles the close button inside the modal, including its
+                        size, position, and hover effects.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy__content </span>
+                    </td>
+                    <td class="table-cell">
+                        Handles the modal's main content area, including
+                        scrollable behavior with a maximum height.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy__footer</span>
+                    </td>
+                    <td class="table-cell">
+                        Styles the modal footer, aligning buttons to the right
+                        and adding spacing between them.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <span class="text-bg">.popzy--no-scroll </span>
+                    </td>
+                    <td class="table-cell">
+                        Disables scrolling on the target element specified by
+                        scrollLockTarget when the modal is open.
+                    </td>
+                </tr>
+            </table>
+        </template>
+        <template class="table-template" data-fortable="installation">
+            <table class="table table-2">
+                <tr class="table-head-row">
+                    <th class="table-head-cell">Method</th>
+                    <th class="table-head-cell">Steps</th>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">Direct Download</td>
+                    <td class="table-cell">
+                        <a href="#" class="link">Download</a>
+                        <p class="text">
+                            Simply extract the ZIP file and use the popzy.min.js
+                            and popzy.min.css files in your project.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </template>
+        <template class="table-template" data-fortable="options">
+            <table class="table table-3">
+                <tr class="table-head-row">
+                    <th class="table-head-cell">Option</th>
+                    <th class="table-head-cell">Type</th>
+                    <th class="table-head-cell">Description</th>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">content, templateId</td>
+                    <td class="table-cell">string</td>
+                    <td class="table-cell">
+                        One of <span class="text-bg">content</span> or
+                        <span class="text-bg">templateId</span> is required to
+                        set the modal content.
+                        <span class="text-bg">content</span> accepts an HTML
+                        string, while
+                        <span class="text-bg">templateId</span> specifies the ID
+                        of a template element. If both are provided,
+                        <span class="text-bg">content</span> will take
+                        precedence.
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">cssClass</td>
+                    <td class="table-cell">array</td>
+                    <td class="table-cell">
+                        Custom CSS classes applied to the modal container
+                        (default: <span class="text-bg">[ ]</span> )
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">footer</td>
+                    <td class="table-cell">boolean</td>
+                    <td class="table-cell">
+                        Shows a footer in the modal (default:
+                        <span class="text-bg">false</span> )
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">destroyOnClose</td>
+                    <td class="table-cell">boolean</td>
+                    <td class="table-cell">
+                        Decides whether the modal is removed from the DOM upon
+                        closing (default:
+                        <span class="text-bg">true</span> )
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">closeMethods</td>
+                    <td class="table-cell">array</td>
+                    <td class="table-cell">
+                        Defines methods to close the modal (default:
+                        <span class="text-bg">
+                            ['overlay', 'button', 'escape']
+                        </span>
+                        )
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">enableScrollLock</td>
+                    <td class="table-cell">boolean</td>
+                    <td class="table-cell">
+                        Enables or disables scroll locking when the modal is
+                        open. When set to <span class="text-bg">true</span>, it
+                        prevents scrolling on the target element specified by
+                        <span class="text-bg">scrollLockTarget</span>. Default:
+                        <span class="text-bg">true</span> .
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">scrollLockTarget</td>
+                    <td class="table-cell">function</td>
+                    <td class="table-cell">
+                        A callback that returns the element to apply scroll
+                        locking on. By default, it locks scrolling on
+                        <span class="text-bg"> document.body </span> .
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">onOpen</td>
+                    <td class="table-cell">function</td>
+                    <td class="table-cell">
+                        Callback function executed when the modal opens (after
+                        transition ends) (default :
+                        <span class="text-bg">undefined</span> )
+                    </td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">onClose</td>
+                    <td class="table-cell">function</td>
+                    <td class="table-cell">
+                        Callback function executed when the modal closes
+                        (default: <span class="text-bg">undefined</span> )
+                    </td>
+                </tr>
+            </table>
+        </template>
+        <template class="code-template" data-fortable="embedJs">
+            <pre><code class="language-markup">&lt;script src=&quot;https://ngoe22.github.io/popzyOfS/popzyOfS.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+        </template>
+        <template class="code-template" data-fortable="embedCss">
+            <pre><code class="language-markup">&lt;link
+    rel=&quot;stylesheet&quot;
+    href=&quot;https://ngoe22.github.io/popzyOfS/popzyOfS.min.css&quot;
+/&gt;</code></pre>
+        </template>
+        <template class="code-template" data-fortable="usageJs">
+            <pre><code class="language-javascript">
+// Initialize a new modal
+const modal = new Popzy({
+    content: 'This is content',
+    // templateId: 'my-modal-template',
+    footer: true,
+    destroyOnClose: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    cssClass: ['custom-class-1', 'custom-class-2'],
+    onOpen: function() {
+        console.log('Modal opened');
+        // this always point to Modal
+    },
+    onClose: function() {
+        console.log('Modal closed');
+        // this always point to Modal
+    },
+});
+
+// Set modal content
+modal.setContent(&apos;&lt;h1&gt;This is new content&lt;/h1&gt;&apos;);
+
+// Add footer buttons
+modal.addFooterBtn('Cancel', 'btn btn--default', function(e) {
+    modal.close();
+});
+
+modal.addFooterBtn('Confirm', 'btn btn--primary', function(e) {
+    modal.close();
+});
+
+// Open the modal
+modal.open();
+
+// Close the modal
+modal.close();
+
+        </code></pre>
+        </template>
+        <template class="code-template" data-fortable="usageHtml">
+            <pre><code class="language-markup">&lt;template id=&quot;my-modal-template&quot;&gt;
+    &lt;div&gt;
+        &lt;h1&gt;This is modal content&lt;/h1&gt;
+        &lt;p&gt;You can add any HTML here.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+        </template>
+
+        <!-- ========= Modal  ======= -->
+
+        <!-- basic -->
+        <template id="basic-modal">
+            <h2>A basic meow</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                impedit tempora itaque dolores animi vel a, doloribus laudantium
+                asperiores doloremque.
+            </p>
+        </template>
+        <!-- large -->
+        <template id="large-modal">
+            <h2>Too large , isn't it ?</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                impedit tempora itaque dolores animi vel a, doloribus laudantium
+                asperiores doloremque.
+            </p>
+            <hr />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                repellendus consectetur, tempore voluptas molestiae provident
+                doloremque? Voluptatibus atque iusto tenetur illum harum nihil
+                veniam itaque iste natus rem incidunt, at distinctio facilis
+                amet delectus, magni corporis maxime sequi alias? Deleniti nulla
+                enim cupiditate maiores? Magni maxime similique reiciendis
+                corporis ipsa laborum, reprehenderit commodi eveniet enim sunt
+                iure ex possimus incidunt quis molestiae corrupti nesciunt sed?
+                Blanditiis accusamus totam nulla sunt explicabo officia dolore
+                aliquam sapiente. Natus architecto asperiores culpa harum aut
+                illum, magni quisquam ipsum fuga vel aspernatur nostrum modi
+                dicta sint et assumenda adipisci pariatur. Autem cum ducimus
+                sapiente est omnis exercitationem, quis, aspernatur nisi ex
+                delectus tenetur, aut porro ipsam adipisci velit fugit
+                laudantium nam. Cumque quod recusandae reprehenderit maxime
+                exercitationem aliquam. Earum animi vel deleniti, perspiciatis
+                sit, vero voluptatibus ut aperiam sapiente ipsum enim atque?
+                Quisquam nulla distinctio, at, velit ipsam quasi sunt hic
+                voluptatibus amet eligendi aspernatur? Molestias sit eaque eos
+                quidem illo ex culpa magni minima cum quod enim, sed explicabo,
+                nostrum animi ipsam, alias rem ducimus accusantium laborum vero
+                itaque nemo obcaecati dolor unde? Praesentium optio eaque
+                voluptates cupiditate alias fugiat repellendus, voluptatibus
+                molestiae exercitationem voluptas, repellat dicta, corporis
+                accusamus numquam eius facilis dignissimos ducimus tempora
+                corrupti doloremque commodi beatae totam velit voluptatum?
+                Repudiandae voluptate est, natus consequuntur eum pariatur
+                dolorem commodi voluptatibus explicabo illo dolor laborum enim,
+                nisi fugit quas reprehenderit ipsum aperiam molestias illum?
+                Velit, culpa tenetur tempore facere sit ipsum delectus
+                asperiores, minima alias maiores error nesciunt voluptatibus quo
+                pariatur quam repellendus exercitationem. Saepe, quis corporis
+                numquam laboriosam, praesentium sed reiciendis eveniet
+                doloremque eum nihil unde odit neque repellat suscipit
+                exercitationem tenetur. Sit laboriosam labore vel eligendi odit
+                placeat aspernatur quidem quasi, id incidunt optio perspiciatis
+                iure! Dicta, corporis! Culpa earum nisi quibusdam? Recusandae ea
+                maxime molestiae consequuntur aliquam, pariatur enim corrupti
+                aperiam similique sed culpa. Numquam distinctio blanditiis non,
+                a iusto natus nulla dolor possimus veritatis suscipit aperiam
+                necessitatibus illo vel quo facilis culpa! Sit magni ullam
+                repellendus eos veniam! Ea minus beatae iusto autem deleniti
+                fugiat, corporis quis impedit tempora, ut hic consectetur quas
+                quia temporibus iste optio corrupti doloribus eaque?
+            </p>
+        </template>
+        <!-- mul -->
+        <template id="mul-modal">
+            <h2>Hi here is Multiple Modal</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                impedit tempora itaque dolores animi vel a, doloribus laudantium
+                asperiores doloremque.
+            </p>
+        </template>
+        <template id="mul-modal-son">
+            <p>hi , im son of mul-modal</p>
+        </template>
+        <!-- footer content -->
+        <template id="footer-content-modal">
+            <h2>Look at the footer</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                impedit tempora itaque dolores animi vel a, doloribus laudantium
+                asperiores doloremque.
+            </p>
+            <hr />
+        </template>
+        <!-- footer content -->
+        <template id="footer-btns-modal">
+            <h2>Let's add some buttons</h2>
+        </template>
+
+        <template> </template>
+        <!-- JS -->
+        <script src="
+    https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+        <script src="https://ngoe22.github.io/popzyOfS/popzyOfS.min.js"></script>
+        <!-- <script src="./meow.js"></script> -->
+        <script src="./script.js"></script>
+    </body>
+</html>
