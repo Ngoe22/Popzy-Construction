@@ -2,12 +2,16 @@
 
 const basicModal = new Popzy({
     // content: "This is content",
-    content: `<p class="thank">This is content</p>`,
-    // templateId: "basic-modal",
+    // content: `<p class="thank">This is content</p>`,
+    templateId: "basic-modal",
     footer: false,
-    destroyOnClose: false,
+    destroyOnClose: true,
     closeMethods: ["overlay", "button", "escape"],
     cssClass: ["custom-class-1"],
+    enableScrollLock: true,
+    scrollLockTarget: function () {
+        return document.body;
+    },
     onOpen: function () {
         console.log(`Modal opened`);
     },
@@ -29,6 +33,7 @@ const largeModal = new Popzy({
     templateId: "large-modal",
     footer: false,
     destroyOnClose: false,
+    enableScrollLock: false,
     closeMethods: ["overlay", "button", "escape"],
     cssClass: ["custom-class-1"],
     onOpen: function () {
@@ -83,9 +88,13 @@ const mulModal_son = new Popzy({
     },
 });
 
-mulModal.addFooterButton(`Click me to see other!!!!`, `modal-btn-test blue`, function () {
-    mulModal_son.open();
-});
+mulModal.addFooterButton(
+    `Click me to see other!!!!`,
+    `modal-btn-test blue`,
+    function () {
+        mulModal_son.open();
+    }
+);
 
 // ==========================================  Footer content
 

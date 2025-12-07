@@ -10,11 +10,11 @@
 "
             rel="stylesheet"
         />
-        <link
+        <!-- <link
             rel="stylesheet"
             href="https://ngoe22.github.io/popzyOfS/popzyOfS.min.css"
-        />
-        <!-- <link rel="stylesheet" href="meow.css" /> -->
+        /> -->
+        <link rel="stylesheet" href="meow.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -30,7 +30,6 @@
                     class="innerIcon"
                 />
             </a>
-
             <ul id="nav-list" class="nav-list">
                 <li class="nav-item"><a href="#sample">Sample</a></li>
                 <li class="nav-item">
@@ -41,12 +40,10 @@
                 <li class="nav-item"><a href="#styling">Styling</a></li>
                 <li class="nav-item"><a href="#api">API</a></li>
             </ul>
-
             <div id="mobile__nav-btn" class="mobile__nav-btn">
                 <img src="./assets/icon/bar.svg" alt="bar" class="innerIcon" />
             </div>
         </nav>
-
         <section id="sample" class="sample innerSection">
             <h2 class="header"><span class="header-num">1</span>Sample</h2>
             <div class="section-body">
@@ -90,7 +87,6 @@
                 </div>
             </div>
         </section>
-
         <section id="installation" class="installation innerSection">
             <h2 class="header">
                 <span class="header-num">2</span>Installation
@@ -117,7 +113,6 @@
                 </div>
             </div>
         </section>
-
         <section id="usage" class="usage innerSection">
             <h2 class="header"><span class="header-num">3</span>Usage</h2>
             <div class="section-body">
@@ -140,14 +135,12 @@
                 </p>
             </div>
         </section>
-
         <section id="options" class="options innerSection">
             <h2 class="header"><span class="header-num">4</span>Options</h2>
             <div class="section-body">
                 <div class="table-block" data-fortable="options"></div>
             </div>
         </section>
-
         <section id="styling" class="styling innerSection">
             <h2 class="header"><span class="header-num">5</span>Styling</h2>
             <div class="section-body">
@@ -163,26 +156,22 @@
                 </p>
             </div>
         </section>
-
         <section id="api" class="api innerSection">
             <h2 class="header"><span class="header-num">6</span>API</h2>
             <div class="section-body">
                 <div class="table-block" data-fortable="api"></div>
             </div>
         </section>
-
         <hr />
         <!-- ---------------------------------------------------- -->
         <!-- ------------------- Template  ---------------------- -->
         <!-- ---------------------------------------------------- -->
-
         <template class="table-template" data-fortable="api">
             <table class="table table-2">
                 <tr class="table-head-row">
                     <th class="table-head-cell">Method</th>
                     <th class="table-head-cell">Description</th>
                 </tr>
-
                 <tr class="table-row">
                     <td class="table-cell">open()</td>
                     <td class="table-cell">
@@ -190,7 +179,6 @@
                         <span class="text-bg">onOpen</span> callback.
                     </td>
                 </tr>
-
                 <tr class="table-row">
                     <td class="table-cell">close()</td>
                     <td class="table-cell">
@@ -202,17 +190,14 @@
                         modal from the DOM.
                     </td>
                 </tr>
-
                 <tr class="table-row">
                     <td class="table-cell">setContent(content)</td>
                     <td class="table-cell">Updates the modal content.</td>
                 </tr>
-
                 <tr class="table-row">
                     <td class="table-cell">setFooterContent(content)</td>
                     <td class="table-cell">Updates the footer content.</td>
                 </tr>
-
                 <tr class="table-row">
                     <td class="table-cell">
                         addFooterBtn(label, cssClass, callback)
@@ -221,7 +206,6 @@
                         Adds a button to the footer with a callback function.
                     </td>
                 </tr>
-
                 <tr class="table-row">
                     <td class="table-cell">destroy()</td>
                     <td class="table-cell">
@@ -420,32 +404,33 @@
             </table>
         </template>
         <template class="code-template" data-fortable="embedJs">
-            <pre><code class="language-markup">&lt;script src=&quot;https://ngoe22.github.io/popzyOfS/popzyOfS.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="language-markup">&lt;script src=&quot;https://cdn.jsdelivr.net/gh/ngoe22/popzyOfS/popzyOfS.min.js&quot;&gt;&lt;/script&gt;</code></pre>
         </template>
         <template class="code-template" data-fortable="embedCss">
             <pre><code class="language-markup">&lt;link
-    rel=&quot;stylesheet&quot;
-    href=&quot;https://ngoe22.github.io/popzyOfS/popzyOfS.min.css&quot;
+        rel=&quot;stylesheet&quot;
+        href=&quot;https://ngoe22.github.io/popzyOfS/popzyOfS.min.css&quot;
 /&gt;</code></pre>
         </template>
         <template class="code-template" data-fortable="usageJs">
             <pre><code class="language-javascript">
 // Initialize a new modal
 const modal = new Popzy({
-    content: 'This is content',
-    // templateId: 'my-modal-template',
-    footer: true,
-    destroyOnClose: false,
-    closeMethods: ['overlay', 'button', 'escape'],
-    cssClass: ['custom-class-1', 'custom-class-2'],
-    onOpen: function() {
-        console.log('Modal opened');
-        // this always point to Modal
-    },
-    onClose: function() {
-        console.log('Modal closed');
-        // this always point to Modal
-    },
+content: 'This is content',
+// templateId: 'my-modal-template',
+footer: true,
+destroyOnClose: false,
+scrollLock: true,
+closeMethods: ['overlay', 'button', 'escape'],
+cssClass: ['custom-class-1', 'custom-class-2'],
+onOpen: function() {
+    console.log('Modal opened');
+    // this always point to Modal
+},
+onClose: function() {
+    console.log('Modal closed');
+    // this always point to Modal
+},
 });
 
 // Set modal content
@@ -453,11 +438,11 @@ modal.setContent(&apos;&lt;h1&gt;This is new content&lt;/h1&gt;&apos;);
 
 // Add footer buttons
 modal.addFooterBtn('Cancel', 'btn btn--default', function(e) {
-    modal.close();
+modal.close();
 });
 
 modal.addFooterBtn('Confirm', 'btn btn--primary', function(e) {
-    modal.close();
+modal.close();
 });
 
 // Open the modal
@@ -465,20 +450,17 @@ modal.open();
 
 // Close the modal
 modal.close();
-
-        </code></pre>
+            </code></pre>
         </template>
         <template class="code-template" data-fortable="usageHtml">
             <pre><code class="language-markup">&lt;template id=&quot;my-modal-template&quot;&gt;
-    &lt;div&gt;
-        &lt;h1&gt;This is modal content&lt;/h1&gt;
-        &lt;p&gt;You can add any HTML here.&lt;/p&gt;
-    &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h1&gt;This is modal content&lt;/h1&gt;
+            &lt;p&gt;You can add any HTML here.&lt;/p&gt;
+        &lt;/div&gt;
 &lt;/template&gt;</code></pre>
         </template>
-
         <!-- ========= Modal  ======= -->
-
         <!-- basic -->
         <template id="basic-modal">
             <h2>A basic meow</h2>
@@ -497,52 +479,6 @@ modal.close();
                 asperiores doloremque.
             </p>
             <hr />
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                repellendus consectetur, tempore voluptas molestiae provident
-                doloremque? Voluptatibus atque iusto tenetur illum harum nihil
-                veniam itaque iste natus rem incidunt, at distinctio facilis
-                amet delectus, magni corporis maxime sequi alias? Deleniti nulla
-                enim cupiditate maiores? Magni maxime similique reiciendis
-                corporis ipsa laborum, reprehenderit commodi eveniet enim sunt
-                iure ex possimus incidunt quis molestiae corrupti nesciunt sed?
-                Blanditiis accusamus totam nulla sunt explicabo officia dolore
-                aliquam sapiente. Natus architecto asperiores culpa harum aut
-                illum, magni quisquam ipsum fuga vel aspernatur nostrum modi
-                dicta sint et assumenda adipisci pariatur. Autem cum ducimus
-                sapiente est omnis exercitationem, quis, aspernatur nisi ex
-                delectus tenetur, aut porro ipsam adipisci velit fugit
-                laudantium nam. Cumque quod recusandae reprehenderit maxime
-                exercitationem aliquam. Earum animi vel deleniti, perspiciatis
-                sit, vero voluptatibus ut aperiam sapiente ipsum enim atque?
-                Quisquam nulla distinctio, at, velit ipsam quasi sunt hic
-                voluptatibus amet eligendi aspernatur? Molestias sit eaque eos
-                quidem illo ex culpa magni minima cum quod enim, sed explicabo,
-                nostrum animi ipsam, alias rem ducimus accusantium laborum vero
-                itaque nemo obcaecati dolor unde? Praesentium optio eaque
-                voluptates cupiditate alias fugiat repellendus, voluptatibus
-                molestiae exercitationem voluptas, repellat dicta, corporis
-                accusamus numquam eius facilis dignissimos ducimus tempora
-                corrupti doloremque commodi beatae totam velit voluptatum?
-                Repudiandae voluptate est, natus consequuntur eum pariatur
-                dolorem commodi voluptatibus explicabo illo dolor laborum enim,
-                nisi fugit quas reprehenderit ipsum aperiam molestias illum?
-                Velit, culpa tenetur tempore facere sit ipsum delectus
-                asperiores, minima alias maiores error nesciunt voluptatibus quo
-                pariatur quam repellendus exercitationem. Saepe, quis corporis
-                numquam laboriosam, praesentium sed reiciendis eveniet
-                doloremque eum nihil unde odit neque repellat suscipit
-                exercitationem tenetur. Sit laboriosam labore vel eligendi odit
-                placeat aspernatur quidem quasi, id incidunt optio perspiciatis
-                iure! Dicta, corporis! Culpa earum nisi quibusdam? Recusandae ea
-                maxime molestiae consequuntur aliquam, pariatur enim corrupti
-                aperiam similique sed culpa. Numquam distinctio blanditiis non,
-                a iusto natus nulla dolor possimus veritatis suscipit aperiam
-                necessitatibus illo vel quo facilis culpa! Sit magni ullam
-                repellendus eos veniam! Ea minus beatae iusto autem deleniti
-                fugiat, corporis quis impedit tempora, ut hic consectetur quas
-                quia temporibus iste optio corrupti doloribus eaque?
-            </p>
         </template>
         <!-- mul -->
         <template id="mul-modal">
@@ -571,12 +507,11 @@ modal.close();
             <h2>Let's add some buttons</h2>
         </template>
 
-        <template> </template>
         <!-- JS -->
         <script src="
-    https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
-        <script src="https://ngoe22.github.io/popzyOfS/popzyOfS.min.js"></script>
-        <!-- <script src="./meow.js"></script> -->
+        https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+        <!-- <script src="https://ngoe22.github.io/popzyOfS/popzyOfS.min.js"></script> -->
+        <script src="./meow.js"></script>
         <script src="./script.js"></script>
     </body>
 </html>
