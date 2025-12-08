@@ -421,6 +421,9 @@ content: 'This is content',
 footer: true,
 destroyOnClose: false,
 scrollLock: true,
+scrollLockTarget: function () {
+    return document.body;
+},
 closeMethods: ['overlay', 'button', 'escape'],
 cssClass: ['custom-class-1', 'custom-class-2'],
 onOpen: function() {
