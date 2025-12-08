@@ -435,6 +435,9 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
 }
+.modal-btn-test:focus {
+    outline: none;
+}
 
 .modal-btn-test.red {
     color: rgba(255, 99, 71, 0.8);
